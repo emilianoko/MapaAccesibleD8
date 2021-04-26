@@ -1,0 +1,30 @@
+leaflet:
+  css:
+    theme:
+      css/leaflet.css: {}
+  js:
+    js/leaflet.js: {}
+    js/map.js: {}
+  dependencies:
+    - core/jquery
+
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/hover.css: {}
+      https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css: { type: external, minified: true }
+
+global-script:
+  js:
+    https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js: { type: external, minified: true }
+    https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js: { type: external, minified: true }
+    js/js.js: {attributes: { async: true} }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.dialog.ajax
+
+
+ 
+
